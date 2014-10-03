@@ -7,7 +7,7 @@ lineno.yy.o: lineno.yy.c
 lineno.yy.c: lineno.l
 	$(LEX) -o lineno.yy.c lineno.l
 
-wc:: wc.yy.c
+wc: wc.yy.c
 	$(CC) wc.yy.c -Wall -g -o wc -ll -lm
 wc.yy.o: wc.yy.c
 wc.yy.c: wc.l
